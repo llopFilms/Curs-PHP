@@ -1,27 +1,32 @@
 <?php
 echo '<h2>Tipus de dades</h2>';
 
+echo '<h2>Enters</h2>';
 $num1 = 10;
 $num2 = -5;
 var_dump( $num1, $num2 );
 echo '<br>';
 
+echo '<h2>Flots</h2>';
 $float1 = 3.15;
 $float2 = -2.5;
 var_dump( $float1, $float2 );
 echo '<br>';
 
+echo '<h2>Booleans</h2>';
 $bool1 = true;
 $bool2 = false;
 var_dump( $bool1, $bool2 );
 echo '<br>';
 
+echo '<h2>Strings</h2>';
 $nom    = "Ramon";
 $cognom = "Pujol";
 var_dump( $nom, $cognom );
 echo '<br>';
 
-$colors = array( 'vermell', 'blau', 'verd' );
+echo '<h2>Arrays</h2>';
+$colors = ['vermell', 'blau', 'verd'];
 var_dump( $colors );
 $noms = array( 'nom1' => 'Maria', 'nom2' => 'Mercè', 'nom3' => 'Glòria' );
 var_dump( $noms );
