@@ -52,14 +52,14 @@ $taula = 6;
 echo '<h3>Taula del ' . $taula . '</h3>';
 
 for ( $i = 0; $i < 10; $i++ ) {
-    $resultat = $i * $taula;
-    echo $i . ' * ' . $taula . ' = ' . $resultat . '<br>';
+    $resultat = $taula * $i;
+    echo $taula . ' * ' . $i . ' = ' . $resultat . '<br>';
 }
 
 echo '<h2>While</h2>';
 
-while ( $nombre != 10 ) {
+while ( $nombre != 100 ) {
 // Genera un nombre aleatori entre 1 i 10
-    $nombre = rand( 1, 10 );
-    echo $nombre . '<br>';
+    $nombre = rand( 1, 100 );
+    echo $nombre . ' ';
 }

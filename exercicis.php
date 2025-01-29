@@ -87,6 +87,63 @@ echo '<h2>Exercici 8</h2>';
 $taula = 7;
 echo 'Farem la taula del ' . $taula . '.';
 echo '<br>';
+
 for ( $i = 1; $i <= 10; $i++ ) {
-    echo $taula . ' * ' . $i . ' = ' . $taula * $i . '<br>';
+    $resultat = $taula * $i;
+    echo $taula . ' * ' . $i . ' = ' . $resultat . '<br>';
 }
+
+echo '<h2>Exercici 9</h2>';
+
+while ( $numero != 10 ) {
+    $numero = rand( 1, 10 );
+    echo 'Número que ha sortit: ' . $numero . '<br>';
+}
+
+echo '<h2>Exercici 10</h2>';
+
+function suma() {
+    $num1     = 10;
+    $num2     = 5;
+    $resultat = $num1 + $num2;
+    echo 'La suma és: ' . $resultat . '<br>';
+}
+
+suma();
+suma();
+
+echo '<h2>Exercici 11</h2>';
+
+function notaMitjana( $nota1, $nota2, $nota3 ) {
+    $sumaNotes    = $nota1 + $nota2 + $nota3;
+    $mitjanaNotes = $sumaNotes / 3;
+    echo 'Les nots introduïdes són: ' . $nota1 . ', ' . $nota2 . ' i ' . $nota3 . '. i la nota mitjana es ' . $mitjanaNotes . '.';
+}
+
+$examen1 = 8;
+$examen2 = 7;
+$examen3 = 6;
+notaMitjana( $examen1, $examen2, $examen3 );
+echo '<br>';
+notaMitjana( 8, 7, 6 );
+
+echo '<h2>Exercici 12</h2>';
+
+function calcularEdat( $anyDeNaixement ) {
+    define( 'ANY_ACTUAL', date( 'Y' ) );
+    $edat = ANY_ACTUAL - $anyDeNaixement;
+    return $edat;
+}
+
+$anyDeNaixement1 = 1990;
+$edat           = calcularEdat( $anyDeNaixement1 );
+echo 'La meva edat es ' . $edat . ' anys.';
+echo '<br>';
+$anydeNaixement2 = 2010;
+$edat            = calcularEdat( $anydeNaixement2 );
+echo 'La meva edat es ' . $edat . ' anys.';
+echo '<br>';
+$anyDeNaixement3 = 2000;
+$edat            = calcularEdat( $anyDeNaixement3 );
+echo 'La meva edat es ' . $edat . ' anys.';
+echo '<br>';
